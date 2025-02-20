@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <title>Bootstrap</title>
+  <style>
+    .img {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px;
+      justify-content: space-evenly;
+    }
+    .card {
+      margin: 20px;
+      width: 800px;
+    }
+    .button {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ADVENTURE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Packages</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Queries
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">About Us</a></li>
+              <hr>
+              <li><a class="dropdown-item" href="#">Contact Us</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit">Explore</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- images i.e cards -->
+  <div class="img">
+    <div class="card cards" style="width: 20rem;">
+      <img src="kerala.jpeg" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Kerala - God's own country</h5>
+        <p class="card-text">A tropical paradise of serene backwaters, lush hills, pristine beaches, and vibrant
+          culture. From houseboat cruises in Alleppey to the misty Munnar hills, Kerala offers a perfect blend of
+          nature, tradition, and adventure.</p>
+        <a href="#" class="btn btn-dark button">Book Now</a>
+      </div>
+    </div>
+    <div class="card" style="width: 21.5rem;">
+      <img src="jaipur.jpg" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Jaipur – The Pink City</h5>
+        <p class="card-text">A royal blend of history, culture, and grandeur. From the majestic Amber Fort to the
+          vibrant bazaars and stunning palaces, Jaipur offers a mesmerizing glimpse into Rajasthan’s rich heritage.</p>
+        <a href="#" class="btn btn-dark button">Book Now</a>
+      </div>
+    </div>
+    <div class="card" style="width: 21rem;">
+      <img src="himachal.jpg" class="card-img-top kerala">
+      <div class="card-body">
+        <h5 class="card-title">Himachal Pradesh – Land of the Himalayas</h5>
+        <p class="card-text">A scenic wonderland of snow-capped peaks, lush valleys, and adventure. From the serene
+          hills of Manali to the spiritual vibes of Dharamshala, Himachal offers the perfect escape for nature lovers
+          and thrill-seekers alike.</p>
+        <a href="#" class="btn btn-dark button">Book Now</a>
+      </div>
+    </div>
+    <div class="card" style="width: 20rem;">
+      <img src="beach1.jpeg" class="card-img-top kerala">
+      <div class="card-body">
+        <h5 class="card-title">Goa – The Beach Paradise</h5>
+        <p class="card-text">A vibrant blend of golden beaches, lively nightlife, and Portuguese heritage. From the
+          serene shores of Palolem to the energetic vibes of Baga, Goa offers the perfect mix of relaxation and
+          adventure.</p>
+        <a href="#" class="btn btn-dark button">Book Now</a>
+      </div>
+    </div>
+    <div class="card" style="width: 20rem;">
+      <img src="delhi.jpeg" class="card-img-top kerala">
+      <div class="card-body">
+        <h5 class="card-title">Delhi – The Heart of India</h5>
+        <p class="card-text">A dynamic fusion of history, culture, and modernity. From the majestic Red Fort to bustling
+          markets and vibrant street food, Delhi offers an unforgettable journey through time and tradition.</p>
+        <a href="#" class="btn btn-dark button">Book Now</a>
+      </div>
+    </div>
+    <div class="card" style="width: 20rem;">
+      <img src="tamilnadu" class="card-img-top kerala">
+      <div class="card-body">
+        <h5 class="card-title">Tamil Nadu – Land of Temples and Traditions</h5>
+        <p class="card-text">A cultural gem with ancient temples, scenic hill stations, and pristine beaches. From the
+          grandeur of Meenakshi Temple to the serene Nilgiris, Tamil Nadu offers a perfect blend of history,
+          spirituality, and nature.</p>
+        <a href="#" class="btn btn-dark button">Book Now</a>
+      </div>
+    </div>
+  </div>
+  <!-- <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-linkedin"></i>
+  <i class="fa-brands fa-youtube"></i>
+  <i class="fa-brands fa-instagram"></i> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+</html>
